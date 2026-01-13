@@ -3,6 +3,18 @@ import { MessageCircle, Clock, Users, Sparkles } from "lucide-react";
 const WHATSAPP_URL = "https://wa.me/573123195667";
 
 const Urgency = () => {
+  const handleWhatsappClick = () => {
+    if (typeof window !== "undefined" && window._hsq) {
+      window._hsq.push([
+        "trackEvent",
+        {
+          id: "whatsapp_click_urgency",
+          value: "cta_urgency_section",
+        },
+      ]);
+    }
+  };
+
   return (
     <section className="py-16 md:py-20 bg-accent/5 border-y border-accent/20">
       <div className="container">
@@ -10,7 +22,9 @@ const Urgency = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/10 border border-accent/30 mb-6">
             <Sparkles className="w-4 h-4 text-accent" />
-            <span className="text-sm font-semibold text-accent">Cupos limitados para 2025</span>
+            <span className="text-sm font-semibold text-accent">
+              Cupos limitados para 2025
+            </span>
           </div>
 
           {/* Headline */}
@@ -19,7 +33,8 @@ const Urgency = () => {
           </h2>
 
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
-            La integración exclusiva Dt Dental + Welli tiene cupos limitados para garantizar un onboarding personalizado y soporte prioritario.
+            La integración exclusiva Dt Dental + Welli tiene cupos limitados para
+            garantizar un onboarding personalizado y soporte prioritario.
           </p>
 
           {/* Urgency indicators */}
@@ -39,6 +54,7 @@ const Urgency = () => {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={handleWhatsappClick}
             className="btn-cta"
           >
             <MessageCircle className="w-5 h-5" />

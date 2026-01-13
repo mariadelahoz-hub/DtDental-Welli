@@ -1,23 +1,27 @@
 import { FileText, CreditCard, Banknote, ArrowRight } from "lucide-react";
+import usoImage from "@/assets/uso.png";
 
 const steps = [
   {
     icon: FileText,
     number: "01",
     title: "Crea el presupuesto",
-    description: "Genera el presupuesto del tratamiento en Dt Dental como siempre lo haces.",
+    description:
+      "Genera el presupuesto del tratamiento en Dt Dental como siempre lo haces.",
   },
   {
     icon: CreditCard,
     number: "02",
     title: "Ofrece financiamiento",
-    description: "El paciente aplica a Welli en segundos, directo desde la plataforma. Sin papeleo.",
+    description:
+      "El paciente aplica a Welli en segundos, directo desde la plataforma. Sin papeleo.",
   },
   {
     icon: Banknote,
     number: "03",
     title: "Recibe tu dinero",
-    description: "Welli te desembolsa el 100% del tratamiento en máximo 72 horas. El paciente paga en cuotas.",
+    description:
+      "Welli te desembolsa el 100% del tratamiento en máximo 72 horas. El paciente paga en cuotas.",
   },
 ];
 
@@ -27,12 +31,24 @@ const HowItWorks = () => {
       <div className="container">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
+
+          {/* Imagen superior */}
+          <div className="flex justify-center mb-6">
+            <img
+              src={usoImage}
+              alt="Uso de Dt Dental con financiamiento Welli"
+              className="w-full max-w-3xl mx-auto mb-8"
+            />
+          </div>
+
           <span className="text-sm font-semibold text-accent uppercase tracking-wider mb-4 block">
             Proceso simple
           </span>
+
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             ¿Cómo funciona?
           </h2>
+
           <p className="text-lg text-muted-foreground">
             En 3 pasos conviertes más presupuestos en tratamientos realizados
           </p>

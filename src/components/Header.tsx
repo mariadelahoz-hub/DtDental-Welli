@@ -24,6 +24,24 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // ✅ HubSpot WhatsApp tracking
+  const trackWhatsappClick = (
+    location: "header_desktop" | "header_mobile"
+  ) => {
+    if (window._hsq) {
+      window._hsq.push([
+        "trackCustomBehavioralEvent",
+        {
+          name: "click_whatsapp_hunter",
+          properties: {
+            landing: "dt_dental_welli",
+            location,
+          },
+        },
+      ]);
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -36,15 +54,15 @@ const Header = () => {
         <div className="flex items-center justify-between">
           {/* Logos */}
           <a href="#" className="flex items-center gap-3">
-            <img 
-              src={dtDentalLogo} 
-              alt="Dt Dental" 
+            <img
+              src={dtDentalLogo}
+              alt="Dt Dental"
               className="h-8 md:h-10 w-auto transition-all"
             />
             <span className="text-xl font-bold text-primary">+</span>
-            <img 
-              src={welliLogo} 
-              alt="Welli" 
+            <img
+              src={welliLogo}
+              alt="Welli"
               className="h-8 md:h-10 w-auto transition-all"
             />
           </a>
@@ -62,12 +80,13 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
+          {/* ✅ Desktop CTA */}
           <div className="hidden md:block">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackWhatsappClick("header_desktop")}
               className="btn-cta py-2.5 px-5 text-sm"
             >
               <MessageCircle className="w-4 h-4" />
@@ -104,11 +123,14 @@ const Header = () => {
                   {link.label}
                 </a>
               ))}
+
+              {/* ✅ Mobile CTA */}
               <div className="px-6 py-4">
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackWhatsappClick("header_mobile")}
                   className="btn-cta w-full justify-center py-3"
                 >
                   <MessageCircle className="w-4 h-4" />
