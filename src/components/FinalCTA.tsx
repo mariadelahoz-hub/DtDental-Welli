@@ -1,10 +1,12 @@
 import { MessageCircle, ArrowRight } from "lucide-react";
 
+
 interface FinalCTAProps {
   onOpenForm: () => void;
 }
 
 const FinalCTA = ({ onOpenForm }: FinalCTAProps) => {
+
   return (
     <section className="py-20 md:py-28 hero-gradient relative overflow-hidden">
       {/* Background decorations */}

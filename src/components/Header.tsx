@@ -23,7 +23,12 @@ const navLinks = [
   { href: "#faq", label: "FAQ" },
 ];
 
-const Header = () => {
+interface HeaderProps {
+  onOpenForm: () => void;
+}
+
+const Header = ({ onOpenForm }: HeaderProps) => {
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showForm, setShowForm] = useState(false);
@@ -85,7 +90,7 @@ const Header = () => {
             <a href="#" className="flex items-center gap-3">
               <img
                 src={dtDentalLogo}
-                alt="Dt Dental"
+                alt="OkVet"
                 className="h-8 md:h-10"
               />
               <span className="text-xl font-bold text-primary">+</span>
@@ -116,7 +121,7 @@ const Header = () => {
                   trackEvent("open_hunter_form", {
                     location: "header_desktop",
                   });
-                  setShowForm(true);
+                  onOpenForm();;
                 }}
                 className="btn-cta py-2.5 px-5 text-sm inline-flex items-center gap-2"
               >
@@ -161,7 +166,7 @@ const Header = () => {
                         location: "header_mobile",
                       });
                       setIsMobileMenuOpen(false);
-                      setShowForm(true);
+                      onOpenForm();;
                     }}
                     className="btn-cta w-full justify-center py-3 inline-flex items-center gap-2"
                   >
