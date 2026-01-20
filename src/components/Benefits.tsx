@@ -4,7 +4,7 @@ const benefits = [
 
   {
     icon: TrendingUp,
-    title: "Mayor tasa de aceptación",
+    title: "Mayor aceptación",
     description: "Ofrece cuotas accesibles y convierte presupuestos que antes se perdían. Aumenta hasta 40% tu cierre de ventas.",
     highlight: ">Conversión",
   },
@@ -24,7 +24,7 @@ const benefits = [
 
 const Benefits = () => {
   return (
-    <section id="beneficios" className="py-20 md:py-28 section-gradient">
+    <section id="beneficios" className="pt-10 pb-20 md:pt-14 md:pb-28 bg-background">
       <div className="container">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

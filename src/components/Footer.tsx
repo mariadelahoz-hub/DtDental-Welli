@@ -42,7 +42,8 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="text-white/40 text-sm text-center">
-            © {new Date().getFullYear()} Todos los derechos reservados
+            © {new Date().getFullYear()} Todos los derechos reservados.
+            Welli S.A.S. es una compañía de financiamiento médico que facilita el acceso a tratamientos y procedimientos de salud, bienestar y estética. Welli no presta servicios médicos, no recomienda tratamientos, no realiza diagnósticos ni influye en la decisión clínica o especialista. Las decisiones relacionadas con la salud del paciente son responsabilidad exclusiva del mismo y del médico.
           </div>
         </div>
       </div>

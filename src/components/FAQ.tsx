@@ -8,7 +8,7 @@ import {
 const faqs = [
   {
     question: "¿Cuánto tiempo tarda el desembolso?",
-    answer: "El desembolso se realiza en máximo 72 horas hábiles después de la aprobación del crédito. En promedio, las clínicas reciben el dinero en 48 horas.",
+    answer: "El desembolso se realiza en máximo 72 horas hábiles después de la aprobación del crédito.",
   },
   {
     question: "¿Cuánto me cuesta usar Welli?",

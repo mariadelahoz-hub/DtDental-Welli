@@ -3,7 +3,7 @@ import { Star, Users, DollarSign, Clock } from "lucide-react";
 const metrics = [
   {
     icon: DollarSign,
-    value: "5,000+",
+    value: "25,000+",
     label: "Tratamientos financiados",
   },
   {
@@ -24,7 +24,7 @@ const testimonials = [
 
 const SocialProof = () => {
   return (
-    <section id="resultados" className="py-20 md:py-28 bg-background">
+    <section id="resultados" className="pt-10 pb-20 md:pt-14 md:pb-28 bg-background">
       <div className="container">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">

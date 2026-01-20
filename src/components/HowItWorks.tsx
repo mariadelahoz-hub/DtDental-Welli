@@ -21,25 +21,32 @@ const steps = [
     number: "03",
     title: "Recibe tu dinero",
     description:
-      "Welli te desembolsa el 100% del tratamiento en máximo 72 horas. El paciente paga en cuotas.",
+      "Welli te desenbolsa en máximo 72 horas. El paciente paga en cuotas.",
   },
 ];
 
 const HowItWorks = () => {
   return (
-    <section id="como-funciona" className="py-20 md:py-28 bg-background">
+    <section id="como-funciona" className="pt-10 pb-20 md:pt-14 md:pb-28 bg-background">
       <div className="container">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
 
-          {/* Imagen superior */}
+          {/* Video superior */}
           <div className="flex justify-center mb-6">
-            <img
-              src={usoImage}
-              alt="Uso de Dt Dental con financiamiento Welli"
-              className="w-full max-w-3xl mx-auto mb-8"
-            />
+            <div className="relative w-full max-w-3xl aspect-video rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/hgavNjo_aus?si=DDKEMA0JpXSUeAmm"
+                title="Video explicativo Welli"
+                className="absolute inset-0 w-full h-full"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
           </div>
+
 
           <span className="text-sm font-semibold text-accent uppercase tracking-wider mb-4 block">
             Proceso simple
