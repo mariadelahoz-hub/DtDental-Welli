@@ -171,7 +171,7 @@ const Header = ({ onOpenForm }: HeaderProps) => {
                     className="btn-cta w-full justify-center py-3 inline-flex items-center gap-2"
                   >
                     <MessageCircle className="w-4 h-4" />
-                    Contactar a un Hunter
+                    Contactar a un asesor comercial
                   </button>
                 </div>
               </nav>
@@ -198,7 +198,7 @@ const Header = ({ onOpenForm }: HeaderProps) => {
             </button>
 
             <h3 className="text-xl font-bold mb-4 text-center">
-              Contacta a un Hunter
+              Contacta a un asesor comercial
             </h3>
 
             <HunterForm />

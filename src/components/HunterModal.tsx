@@ -20,7 +20,7 @@ const HunterModal = ({ isOpen, onClose }: HunterModalProps) => {
         </button>
 
         <h3 className="text-xl font-bold mb-4 text-center">
-          Contacta a un Hunter
+          Contacta a un asesor comercial
         </h3>
 
         <HunterForm />

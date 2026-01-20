@@ -61,7 +61,7 @@ const Hero = ({ onOpenForm }: HeroProps) => {
               className="btn-cta !text-gray-800 inline-flex items-center gap-2"
             >
               <MessageCircle className="w-5 h-5 !text-gray-800" />
-              Contactar a un Hunter
+              Contactar a un asesor comercial
             </button>
 
             {/* CTA SECUNDARIO */}

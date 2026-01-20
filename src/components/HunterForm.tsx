@@ -47,7 +47,7 @@ const HunterForm = () => {
   return (
     <div>
       <p className="text-sm text-muted-foreground mb-4 text-center">
-        Déjanos tus datos y un Hunter te contactará de inmediato
+        Déjanos tus datos y un asesor comercial te contactará de inmediato
       </p>
 
       <div
