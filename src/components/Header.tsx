@@ -90,7 +90,7 @@ const Header = ({ onOpenForm }: HeaderProps) => {
             <a href="#" className="flex items-center gap-3">
               <img
                 src={dtDentalLogo}
-                alt="OkVet"
+                alt="Dt Dental"
                 className="h-8 md:h-10"
               />
               <span className="text-xl font-bold text-primary">+</span>

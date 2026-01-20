@@ -48,7 +48,7 @@ const Hero = ({ onOpenForm }: HeroProps) => {
 
               <p className="text-lg md:text-xl text-gray/80 mb-8">
                 Integra el financiamiento de <strong>Welli</strong> directamente en{" "}
-                <strong>OkVet</strong> y convierte más presupuestos en tratamientos.
+                <strong>Dt Dental</strong> y convierte más presupuestos en tratamientos.
               </p>
             </div>
           </div>
